@@ -79,6 +79,7 @@ function onTodoCheck(index) {
    * โดยใช้ index นั้น
    */
   console.log("Todo ที่จะถูกเปลี่ยนสถานะ :", todos[index]);
+  reRenderTodos();
 }
 
 function onTodoDelete(index) {
@@ -86,4 +87,5 @@ function onTodoDelete(index) {
    * @description นำ index ที่ได้มา ไปลบ todo ใน Array โดยใช้ index นั้น (Hint : ใช้ splice)
    */
   console.log("Todo ที่จะถูกลบ :", todos[index]);
+  reRenderTodos();
 }
