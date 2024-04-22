@@ -55,15 +55,16 @@ function reRenderTodos() {
       /**
        * @description `eachTodoElement` จะมีโครงสร้างดังนี้
        * <div class="todo-title">
-       *  <input class="todo-checkbox" type="checkbox" onchange="onTodoCheck(${index})">
+       *  <input class="todo-checkbox" type="checkbox" onchange="onTodoCheck(${index})" ${todo.completed && "checked"} />
        *  <span> ชื่อของ Task ที่ต้องทำ </span>
        * </div>
        * <button class="button button-delete" onclick="onTodoDelete(${index})">Delete</button>
        * @description ให้แทนที่ ชื่อของ Task ที่ต้องทำ ในส่วนของ <span> ด้วยชื่อของ Task ที่ต้องทำ
        * @description หาก Task นั้นเสร็จแล้ว ให้เพิ่ม class ให้กับ <span> โดย class จะชื่อว่า "checked"
+       * @tutorial Hint : ข้อนี้เราสามารถทำได้ทั้งหมด 2 วิธี คือ 1. ใช้ innerHTML 2. สร้าง element แล้ว appendChild ลงไป
+       * Google หาวิธีการใช้งาน innerHTML และ appendChild ไปเล๊ยยยย ✨
        */
       // ........
-
       todosElement.appendChild(eachTodoElement);
     });
   }
