@@ -1,0 +1,95 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border-width: 0;
+  border-style: solid;
+  border-color: #e5e7eb;
+}
+
+.container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.app {
+  /* ตัว App ทั้งหมด */
+  padding-top: 1rem;
+}
+
+.app > * {
+  margin-top: 0.5rem;
+}
+
+label {
+  display: flex;
+  flex-direction: column;
+}
+
+.textField {
+   /* กล่อง Input รับค่า Title */
+}
+
+.button {
+  padding: 0.5rem;
+  border-radius: 0.25rem;
+}
+
+.button:active {
+  transform: scale(0.95);
+}
+
+.button-add {
+  /* ปุ่มเพิ่ม */
+}
+
+.button-add:hover {
+   /* ปุ่มเพิ่มเมื่อ Hover */
+}
+
+.button-delete {
+   /* ปุ่มลบ */
+}
+
+.button-delete:hover {
+   /* ปุ่มลบเมื่อ Hover */
+}
+
+hr {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  border-width: 1px;
+}
+
+.toolbar {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.noTodo {
+  color: #6b7280;
+  text-align: center;
+}
+
+.todos > * {
+  margin-top: 0.5rem;
+}
+
+.todo {
+   /* จัดรายการแสดงผล Todo ให้เป็นแนวนอน โดยปุ่มเช็คอยู่ริมซ้าย และ ชื่อรายการ Todo อยู่ริมขวา */
+}
+
+.todo-title {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.todo-checkbox {
+   /* กำหนดความกว้าง และ ความสูง ของ Input checkbox */
+}
+
+.checked {
+  text-decoration: line-through;
+}
